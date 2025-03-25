@@ -139,31 +139,49 @@ onMounted(() => {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 24px;
+  background-color: var(--surface-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .selector-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
-  gap: 20px;
+  margin-bottom: 24px;
+  gap: 24px;
 }
 
 .selector {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
 select {
-  padding: 8px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  background-color: #fff;
-  color: #333;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid var(--primary-color);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-size: 0.95em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+select:hover {
+  border-color: var(--primary-hover);
+  background-color: var(--surface-color);
+}
+
+select:focus {
+  outline: none;
+  border-color: var(--primary-hover);
+  box-shadow: 0 0 0 2px rgba(124, 131, 255, 0.2);
 }
 
 .chart {
   height: 400px;
+  margin-top: 12px;
 }
 </style>

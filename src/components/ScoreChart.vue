@@ -181,14 +181,17 @@ onMounted(() => {
 select {
   padding: 8px;
   border-radius: 4px;
-  border: 1px solid #ccc;
-  background-color: #fff;
-  color: #333;
+  border: 1px solid var(--surface-color);
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 .chart {
   width: 100%;
   height: 400px;
   margin-top: 20px;
+  background-color: var(--bg-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 </style>

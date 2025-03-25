@@ -22,24 +22,31 @@ import SubjectAnalysisChart from "./components/SubjectAnalysisChart.vue";
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 32px 20px;
 }
 
 h1 {
   text-align: center;
-  margin-bottom: 30px;
-  color: #333;
+  margin-bottom: 40px;
+  color: var(--text-color);
+  font-weight: 600;
+  letter-spacing: -0.5px;
 }
 
 .charts-container {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 48px;
+  margin: 0 auto;
+  max-width: 900px;
 }
 
 @media (min-width: 1024px) {
+  .container {
+    padding: 48px 32px;
+  }
   .charts-container {
-    flex-direction: column;
+    gap: 64px;
   }
 }
 </style>
