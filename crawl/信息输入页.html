@@ -1,0 +1,45 @@
+<form id="form-data" onsubmit="return false">
+  <div style="margin: 20px 15px; color: #000; font-size: 14px">
+    请输入正确的查询条件进行查询
+  </div>
+  <div class="weui-cells weui-cells_form">
+    <div class="weui-cell">
+      <div class="weui-cell__hd">
+        <label class="weui-label">身份证后四位</label>
+      </div>
+      <div class="weui-cell__bd">
+        <input
+          class="weui-input"
+          data-sname="身份证后四位"
+          name="s_shenfenzhenghousiwei"
+          type="text"
+          placeholder="请输入身份证后四位"
+        />
+      </div>
+    </div>
+    <div class="weui-cell">
+      <div class="weui-cell__hd"><label class="weui-label">姓名</label></div>
+      <div class="weui-cell__bd">
+        <input
+          class="weui-input"
+          data-sname="姓名"
+          name="s_xingming"
+          type="text"
+          placeholder="请输入姓名"
+        />
+      </div>
+    </div>
+    <div id="jsPicVerifyBox"></div>
+  </div>
+</form>
+
+<div class="weui-btn-area">
+  <button
+    type="button"
+    class="weui-btn weui-btn_primary"
+    id="yiDunSubmitBtn"
+    style="background: #1aad19; color: #ffffff"
+  >
+    查询
+  </button>
+</div>
